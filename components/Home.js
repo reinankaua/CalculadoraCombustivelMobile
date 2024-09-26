@@ -22,9 +22,9 @@ export default function Home() {
       <Image source={image} />
       <Title>Qual a melhor opção?</Title>
       <Label>Álcool (preço por litro)</Label>
-      <Input placeholder="Digite o valor do Álcool" onChangeText={alcool => setAlcool(alcool)}/>
+      <Input keyboardType="numeric" placeholder="Digite o valor do Álcool" onChangeText={alcool => setAlcool(alcool)}/>
       <Label>Gasolina (preço por litro)</Label>
-      <Input placeholder="Digite o valor da Gasolina" onChangeText={gasolina => setGasolina(gasolina)}/>
+      <Input keyboardType="numeric" placeholder="Digite o valor da Gasolina" onChangeText={gasolina => setGasolina(gasolina)}/>
       <Button onPress={calcular}>
         <ButtonText>Calcular</ButtonText>
       </Button>
